@@ -87,9 +87,9 @@ footer a:hover {
     }
 }
 
-::-moz-selection { /* Code for Firefox */
-    color: red;
-    background: yellow;
+::-moz-selection {
+    color: var(--black);
+    background: var(--red);
   }
   
 ::selection {
