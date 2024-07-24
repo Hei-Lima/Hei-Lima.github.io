@@ -61,6 +61,11 @@ span {
     height: auto;
 }
 
+#container video {
+    max-width: 50%;
+    height: auto;
+}
+
 footer {
     margin: .75em;
 }
