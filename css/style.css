@@ -86,3 +86,13 @@ footer a:hover {
         padding: 2vh 2vw;
     }
 }
+
+::-moz-selection { /* Code for Firefox */
+    color: red;
+    background: yellow;
+  }
+  
+::selection {
+    color: var(--black);
+    background: var(--red);
+  }
