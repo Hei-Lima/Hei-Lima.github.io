@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-    --black: #2C2C34;
-    --red: #E06B74;
-    --green: #98C379;
-    --yellow: #E5C07A;
-    --blue: #62AEEF;
-    --cyan: #55B6C2;
-    --white: #ABB2BF;
-    --white2: #787d86;
+    --black: #FDF6E3;
+    --red: #DC322F;
+    --green: #859900;
+    --yellow: #B58900;
+    --blue: #268BD2;
+    --cyan: #2AA198;
+    --white: #002B36;
+    --white2: #586E75;
 }
 
 body {
@@ -96,3 +96,25 @@ footer a:hover {
     color: var(--black);
     background: var(--red);
   }
+
+#fixed-buttons {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#fixed-buttons button {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--white);
+    transition: color 0.3s;
+}
+
+#fixed-buttons button:hover {
+    color: var(--cyan);
+}

@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Página pessoal do Heitor Lima.">
-    <meta name="keywords" content="Heitor Lima, Toco, 8Or, estudante, Sistemas de Informação, programação, desenvolvimento, IFES, GitHub, LinkedIn, programação">
-    <meta property="og:title" content="Heitor Lima - Página Pessoal">
-    <meta property="og:description" content="Página pessoal do Heitor Lima.">
+    <meta name="description" content="Heitor Lima's personal page.">
+    <meta name="keywords" content="Heitor Lima, Toco, 8Or, student, Information Systems, programming, development, IFES, GitHub, LinkedIn, programming">
+    <meta property="og:title" content="Heitor Lima - Personal Page">
+    <meta property="og:description" content="Heitor Lima's personal page.">
     <meta property="og:image" content="https://hei-lima.tech/media/ico.png">
     <meta property="og:url" content="https://hei-lima.tech">
     <meta name="twitter:card" content="summary_large_image">
-    <title>Heitor Lima - Página Pessoal</title>
+    <title>Heitor Lima - Personal Page</title>
     <link rel="shortcut icon" href="media/ico.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style-dark.css" id="theme-style">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -18,23 +18,23 @@
 <body>
     <div id="container">
         <h1>Heitor "8Or" Lima</h1>
-        <h2>Brasileiro <span>•</span> Estudante de Sistemas de Informação</h2>
+        <h2>Brazilian <span>•</span> Information Systems Student</h2>
         <video autoplay muted loop>
             <source type="video/webm" src="media/tocovidv1.webm"></source>
         </video>
         <hr>
         <p>
-            Oi! Meu nome é Heitor Lima, mas também sou conhecido como Toco ou 8Or.
-            Atualmente sou estudante de Sistemas de Informação no IFES - Campus Serra.
-            Sempre fui curioso e encontrei paixão na programação, e em atividades de desenvolvimento no geral.
-            Amo aprender e sempre estou disposto a enfrentar novos desafios.
+            Hi! My name is Heitor Lima, but I'm also known as Toco or 8Or.
+            Currently, I am an Information Systems student at IFES - Serra Campus.
+            I have always been curious and found a passion in programming and development activities in general.
+            I love learning and am always willing to face new challenges.
         <br>
         <br>
-            Meu objetivo é sempre melhorar minhas habilidades e tornar todos os ambientes que participo mais
-            eficientes e sustentáveis.
+            My goal is always to improve my skills and make all the environments I participate in more
+            efficient and sustainable.
         <br>
         <br>
-            Me contate e acompanhe meus trabalhos nos links abaixo:
+            Contact me and follow my work on the links below:
         </p>
         <hr>
         <footer>
@@ -45,7 +45,7 @@
     </div>
     <div id="fixed-buttons">
         <button onclick="toggleTheme()" id="theme-toggle"></button>
-        <button onclick="changeLanguage('en')" id="language-toggle"><i class="language"></i></button>
+        <button onclick="changeLanguage('pt')" id="language-toggle"><i class="fas fa-language"></i></button>
     </div>
     <script>
         function toggleTheme() {
@@ -67,11 +67,11 @@
             document.getElementById('theme-style').setAttribute('href', savedTheme);
             document.getElementById('theme-toggle').innerHTML = savedTheme === 'css/style-dark.css' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 
-            const savedLanguage = localStorage.getItem('language') || 'pt';
+            const savedLanguage = localStorage.getItem('language') || 'en';
             if (savedLanguage === 'en') {
                 document.getElementById('language-toggle').innerHTML = '<i id="icon" class="fa fa-language"></i>';
             } else {
-                document.getElementById('language-toggle').innerHTML = '<i id="icon" class="fa fa-language"></i>';
+                document.getElementById('language-toggle').innerHTML = '<i class="icon" class="fa fa-language"></i>';
             }
         });
     </script>
