@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --black: #FDF6E3;
+    --red: #DC322F;
+    --green: #859900;
+    --yellow: #B58900;
+    --blue: #268BD2;
+    --cyan: #2AA198;
+    --white: #002B36;
+    --white2: #586E75;
+    font-size: 112.5%;
+    line-height: 1.9;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.c-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 1rem 1rem 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.content {
+    line-height: 1.60;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 1em;
+    max-width: 80ch;
+    color: var(--white);
+}
+
+.content p {
+    font-family: system-ui;
+}
+
+.content h1, .content h2, .content h3 {
+    font-family: Libre Baskerville, serif;
+    letter-spacing: 0.01em;
+    text-wrap: balance;
+}
+
+.content h1 {
+    font-size: 300.5%;
+    padding-bottom: 0.5rem;  /* Ajuste o valor conforme necessário */
+}
+
+nav {
+    background-color: var(--white);
+    overflow: hidden;
+    padding: 1rem;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: var(--black);
+    text-align: center;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+nav ul li a:hover {
+    background-color: var(--white2);
+    color: var(--white);
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--red);
+}
+
+.metadata {
+    font-style: italic;
+    color: var(--white2);
+}
